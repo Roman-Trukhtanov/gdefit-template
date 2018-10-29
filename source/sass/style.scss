@@ -1,0 +1,50 @@
+/* Переменные (Начало) */
+@import "variables";
+/* Переменные (Конец) */
+/* Шрифты (Начало)*/
+@import "fonts";
+/* Шрифты (Конец)*/
+/* Общие блоки (Начало) */
+@import "blocks/visually-hidden";
+/* Общие блоки (Конец) */
+/* Slick Carousel (Source) */
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+/* //Slick Carousel (Source) */
+/* Bootstrap (Начало) */
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot",
+  "../../node_modules/bootstrap/scss/grid",
+  "../../node_modules/bootstrap/scss/transitions";
+/* Bootstrap (Конец) */
+/* Глобальные стили (Начало) */
+@import "scaffolding";
+/* Глобальные стили (Конец) */
+/* Хедер (Начало) */
+@import "blocks/header/main-nav",
+  "blocks/header/main-logo",
+  "blocks/header/page-header",
+  "blocks/header/site-nav-list",
+  "blocks/header/sub-menu";
+/* Хедер (Конец) */
+/* Прочие блоки */
+@import "blocks/index-page/page-main",
+  "blocks/header/site-search",
+  "blocks/header/social-links",
+  "blocks/index-page/slick-carousel-sl",
+  "blocks/index-page/feeds",
+  "blocks/index-page/blog-posts",
+  "blocks/index-page/blog-post";
+/* Футер (Начало) */
+@import "blocks/footer/page-footer",
+  "blocks/footer/widgets",
+  "blocks/footer/widget-post",
+  "blocks/footer/widget",
+  "blocks/footer/copyright";
+/* Футер (Конец) */
+/* Внутренняя страница (Начало) */
+@import "blocks/inner-page/post-header",
+  "blocks/inner-page/breadcrumb",
+  "blocks/inner-page/inner-page-common",
+  "blocks/inner-page/posts-content",
+  "blocks/inner-page/interesting-posts",
+  "blocks/inner-page/interesting-post";
+/* Внутренняя страница (Конец) */

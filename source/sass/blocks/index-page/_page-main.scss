@@ -1,0 +1,10 @@
+.page-main {
+  margin: 0;
+  padding: 0;
+}
+
+@include desktop-width {
+  .page-main__wrapper {
+    padding-top: 20px;
+  }
+}

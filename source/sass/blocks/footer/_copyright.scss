@@ -1,0 +1,15 @@
+.copyright {
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid $widget-item-border-color;
+}
+
+.copyright__desc {
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+
+  color: $white;
+}

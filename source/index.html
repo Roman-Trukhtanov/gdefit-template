@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GdeFit — page</title>
+  <link rel="preload" href="fonts/merriweather/merriweather-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rajdhani-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement('picture');
+  </script>
+
+  <script src="js/picturefill.min.js" async></script>
+</head>
+<body>
+  <div class="inline-sprite">
+    <include src="build/img/svg/sprite.svg"></include>
+  </div>
+
+  <header class="page-header page-header--index-page">
+    <div class="page-header__container-wrap container-fluid">
+      <div class="row no-gutters">
+        <div class="col-sm-12 page-header__nav main-nav">
+
+          <div class="main-nav__head-wrap">
+            <div class="main-nav__brand">
+              <a class="main-nav__brand-link" href="#">
+                <img class="main-nav__brand-img" src="img/gdefit-logo.png" alt="Site Logo" title="Logo description">
+              </a>
+            </div>
+
+            <button class="main-nav__trigger" type="button" data-toggle="collapse" data-target="#mainMenuCollapse" aria-expanded="false" aria-controls="mainMenuCollapse">
+              <span></span>
+            </button>
+          </div>
+
+          <div class="main-nav__collapse collapse main-nav__collapse--nojs" id="mainMenuCollapse">
+            <div class="main-nav__height-controller">
+              <div class="main-nav__wrapper container">
+                <div class="main-nav__social social-links col-lg-4">
+                  <div class="social-links__main-wrapper">
+                    <a class="social-links__toggle social-links__toggle--active" aria-label="Кнопка социальных сетей">
+                      <svg class="social-links__toggle-icon" width="16" height="16">
+                        <use xlink:href="#sprite-icon-share"></use>
+                      </svg>
+                    </a>
+
+                    <div class="social-links__wrapper">
+                      <ul class="social-links__list">
+                        <li class="social-links__item">
+                          <a class="social-links__link social-links__link--facebook" href="#" target="_blank" title="Facebook" rel="nofollow">
+                            <svg class="social-links__icon" width="22" height="22">
+                              <use xlink:href="#sprite-icon-facebook"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-links__item">
+                          <a class="social-links__link social-links__link--instagram" href=# target="_blank" title="Instagram" rel="nofollow">
+                            <svg class="social-links__icon" width="22" height="22">
+                              <use xlink:href="#sprite-icon-instagram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li class="social-links__item">
+                          <a class="social-links__link social-links__link--telegram" href="#" target="_blank" title="Telegram" rel="nofollow">
+                            <svg class="social-links__icon" width="22" height="22">
+                              <use xlink:href="#sprite-icon-telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main-nav__main-brand page-header__brand col-lg-4">
+                  <div class="page-header__logo main-logo">
+                    <a class="main-logo__link" href="#" tabindex="1">
+                      <img class="main-logo__img" src="img/gdefit-logo.png" alt="Site Logo" title="Logo description">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="main-nav__search site-search col-lg-4">
+                    <form method="get" class="site-search__form" role="search" action="#">
+                      <input class="site-search__search-field" type="search" name="search" placeholder="Поиск...">
+                      <button class="site-search__btn-submit" type="submit" >
+                        <svg class="site-search__icon" width="20" height="20">
+                          <use xlink:href="#sprite-icon-search"></use>
+                        </svg>
+                        <span class="visually-hidden">Поиск по сайту</span>
+                      </button>
+                    </form>
+                </div>
+              </div>
+
+              <nav class="main-nav__container">
+                <ul class="main-nav__list site-nav-list">
+                  <li class="site-nav-list__item site-nav-list__item--active">
+                    <a href="index.html" class="site-nav-list__link site-nav-list__link--sub-menu" title="Home">Главная</a>
+
+                    <button class="sub-menu__toggle" type="button" data-toggle="collapse" data-target="#subMenuHomeItem" aria-expanded="false" aria-controls="subMenuHomeItem">
+                      <span class="visually-hidden">Открыть подменю</span>
+                    </button>
+                    <div class="site-nav-list__sub-menu sub-menu" id="subMenuHomeItem">
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link"  title="Home">Home Link 1</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link"  title="Home">Home Link 2</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="inner-page.html" class="site-nav-list__link" title="Features">Движение</a>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="#" class="site-nav-list__link site-nav-list__link--sub-menu" title="Travel">Здоровье</a>
+
+                    <button class="sub-menu__toggle" type="button" data-toggle="collapse" data-target="#subMenuTravelItem" aria-expanded="false" aria-controls="subMenuTravelItem">
+                      <span class="visually-hidden">Открыть подменю</span>
+                    </button>
+                    <div class="site-nav-list__sub-menu sub-menu" id="subMenuTravelItem">
+                      <ul class="sub-menu__list">
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link"  title="Home">Home Link 1</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link" title="Home">Home Link 2</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a href="#" class="sub-menu__link"  title="Home">Home Link 3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="#" class="site-nav-list__link" title="Lifestyle">Мотивация</a>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="#" class="site-nav-list__link" title="Music">Питание</a>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="#" class="site-nav-list__link" title="Shop">Места</a>
+                  </li>
+                  <li class="site-nav-list__item">
+                    <a href="#" class="site-nav-list__link" title="Contact Us">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <h1 class="visually-hidden">Start Project</h1>
+
+      <section class="blog-posts">
+        <h2 class="visually-hidden">Слайдер постов</h2>
+        <div class="blog-posts__slider blog-posts__slider--nojs">
+          <div class="blog-posts__slider-item">
+            <article class="blog-post">
+              <figure class="blog-post__img-wrap">
+                <a class="blog-post__link" href="#" title="Post title" tabindex="0">
+                  <img class="blog-post__img" width="550" height="605" src="img/test-slide.jpg" alt="Test Slide">
+                </a>
+              </figure>
+
+              <div class="blog-post__inner-wrap">
+                <div class="blog-post__cat-wrap">
+                  <ul class="blog-post__cat-list">
+                    <li class="blog-post__cat-item">
+                      <a class="blog-post__cat-link" href="#" tabindex="-1">Food</a>
+                    </li>
+                  </ul>
+                </div><!--/.blog-post__cat-wrap -->
+
+                <div class="blog-post__title-wrap">
+                  <h2 class="blog-post__title" >
+                    <a class="blog-post__title-link"  href="#" title="Link title" tabindex="0">Sweet and Sour Crispy Chicken Strips</a>
+                  </h2>
+                </div><!--/.blog-post__title-wrap -->
+
+                <div class="blog-post__meta">
+                  <div class="blog-post__author">
+                      <a class="blog-post__author-link" href="#" title="Posts by Felix Wolfe" rel="author" tabindex="0">Felix Wolfe</a>
+                  </div><!--/.blog-post__author -->
+
+                  <div class="blog-post__comments-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-comment-regular"></use>
+                    </svg>
+                    <a class="blog-post__comments-link">1 Comment</a>
+                  </div><!--/.blog-post__comment-wrap -->
+
+                  <div class="blog-post__date-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-clock-regular"></use>
+                    </svg>
+                    <time class="blog-post__date" datetime='2018-12-10'>2018-12-10</time>
+                  </div>
+                </div><!--/.blog-post__meta -->
+              </div><!--/.blog-post__inner-wrap -->
+            </article><!--/.blog-post -->
+          </div><!--/.blog-posts__slider-item -->
+          <div class="blog-posts__slider-item">
+            <article class="blog-post">
+              <figure class="blog-post__img-wrap">
+                <a class="blog-post__link" href="#" title="Post title" tabindex="0">
+                  <img class="blog-post__img" width="550" height="605" src="img/test-slide.jpg" alt="Test Slide" >
+                </a>
+              </figure>
+
+              <div class="blog-post__inner-wrap">
+                <div class="blog-post__cat-wrap">
+                  <ul class="blog-post__cat-list">
+                    <li class="blog-post__cat-item">
+                      <a class="blog-post__cat-link" href="#" tabindex="-1">Food</a>
+                    </li>
+                  </ul>
+                </div><!--/.blog-post__cat-wrap -->
+
+                <div class="blog-post__title-wrap">
+                  <h2 class="blog-post__title" >
+                    <a class="blog-post__title-link"  href="#" title="Link title" tabindex="0">Sweet and Sour Crispy Chicken Strips</a>
+                  </h2>
+                </div><!--/.blog-post__title-wrap -->
+
+                <div class="blog-post__meta">
+                  <div class="blog-post__author">
+                      <a class="blog-post__author-link" href="#" title="Posts by Felix Wolfe" rel="author" tabindex="0">Felix Wolfe</a>
+                  </div><!--/.blog-post__author -->
+
+                  <div class="blog-post__comments-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-comment-regular"></use>
+                    </svg>
+                    <a class="blog-post__comments-link">1 Comment</a>
+                  </div><!--/.blog-post__comment-wrap -->
+
+                  <div class="blog-post__date-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-clock-regular"></use>
+                    </svg>
+                    <time class="blog-post__date" datetime='2018-12-10'>2018-12-10</time>
+                  </div>
+                </div><!--/.blog-post__meta -->
+              </div><!--/.blog-post__inner-wrap -->
+            </article><!--/.blog-post -->
+          </div><!--/.blog-posts__slider-item -->
+          <div class="blog-posts__slider-item">
+            <article class="blog-post">
+              <figure class="blog-post__img-wrap">
+                <a class="blog-post__link" href="#" title="Post title" tabindex="0">
+                  <img class="blog-post__img" width="550" height="605" src="img/test-slide.jpg" alt="Test Slide" >
+                </a>
+              </figure>
+
+              <div class="blog-post__inner-wrap">
+                <div class="blog-post__cat-wrap">
+                  <ul class="blog-post__cat-list">
+                    <li class="blog-post__cat-item">
+                      <a class="blog-post__cat-link" href="#" tabindex="-1">Food</a>
+                    </li>
+                  </ul>
+                </div><!--/.blog-post__cat-wrap -->
+
+                <div class="blog-post__title-wrap">
+                  <h2 class="blog-post__title" >
+                    <a class="blog-post__title-link"  href="#" title="Link title" tabindex="0">Sweet and Sour Crispy Chicken Strips</a>
+                  </h2>
+                </div><!--/.blog-post__title-wrap -->
+
+                <div class="blog-post__meta">
+                  <div class="blog-post__author">
+                      <a class="blog-post__author-link" href="#" title="Posts by Felix Wolfe" rel="author" tabindex="0">Felix Wolfe</a>
+                  </div><!--/.blog-post__author -->
+
+                  <div class="blog-post__comments-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-comment-regular"></use>
+                    </svg>
+                    <a class="blog-post__comments-link">1 Comment</a>
+                  </div><!--/.blog-post__comment-wrap -->
+
+                  <div class="blog-post__date-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-clock-regular"></use>
+                    </svg>
+                    <time class="blog-post__date" datetime='2018-12-10'>2018-12-10</time>
+                  </div>
+                </div><!--/.blog-post__meta -->
+              </div><!--/.blog-post__inner-wrap -->
+            </article><!--/.blog-post -->
+          </div><!--/.blog-posts__slider-item -->
+          <div class="blog-posts__slider-item">
+            <article class="blog-post">
+              <figure class="blog-post__img-wrap">
+                <a class="blog-post__link" href="#" title="Post title" tabindex="0">
+                  <img class="blog-post__img" width="550" height="605" src="img/test-slide.jpg" alt="Test Slide" >
+                </a>
+              </figure>
+
+              <div class="blog-post__inner-wrap">
+                <div class="blog-post__cat-wrap">
+                  <ul class="blog-post__cat-list">
+                    <li class="blog-post__cat-item">
+                      <a class="blog-post__cat-link" href="#" tabindex="-1">Food</a>
+                    </li>
+                  </ul>
+                </div><!--/.blog-post__cat-wrap -->
+
+                <div class="blog-post__title-wrap">
+                  <h2 class="blog-post__title" >
+                    <a class="blog-post__title-link"  href="#" title="Link title" tabindex="0">Sweet and Sour Crispy Chicken Strips</a>
+                  </h2>
+                </div><!--/.blog-post__title-wrap -->
+
+                <div class="blog-post__meta">
+                  <div class="blog-post__author">
+                      <a class="blog-post__author-link" href="#" title="Posts by Felix Wolfe" rel="author" tabindex="0">Felix Wolfe</a>
+                  </div><!--/.blog-post__author -->
+
+                  <div class="blog-post__comments-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-comment-regular"></use>
+                    </svg>
+                    <a class="blog-post__comments-link">1 Comment</a>
+                  </div><!--/.blog-post__comment-wrap -->
+
+                  <div class="blog-post__date-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-clock-regular"></use>
+                    </svg>
+                    <time class="blog-post__date" datetime='2018-12-10'>2018-12-10</time>
+                  </div>
+                </div><!--/.blog-post__meta -->
+              </div><!--/.blog-post__inner-wrap -->
+            </article><!--/.blog-post -->
+          </div><!--/.blog-posts__slider-item -->
+          <div class="blog-posts__slider-item">
+            <article class="blog-post">
+              <figure class="blog-post__img-wrap">
+                <a class="blog-post__link" href="#" title="Post title" tabindex="0">
+                  <img class="blog-post__img" width="550" height="605" src="img/test-slide.jpg" alt="Test Slide" >
+                </a>
+              </figure>
+
+              <div class="blog-post__inner-wrap">
+                <div class="blog-post__cat-wrap">
+                  <ul class="blog-post__cat-list">
+                    <li class="blog-post__cat-item">
+                      <a class="blog-post__cat-link" href="#" tabindex="-1">Food</a>
+                    </li>
+                  </ul>
+                </div><!--/.blog-post__cat-wrap -->
+
+                <div class="blog-post__title-wrap">
+                  <h2 class="blog-post__title" >
+                    <a class="blog-post__title-link"  href="#" title="Link title" tabindex="0">Sweet and Sour Crispy Chicken Strips</a>
+                  </h2>
+                </div><!--/.blog-post__title-wrap -->
+
+                <div class="blog-post__meta">
+                  <div class="blog-post__author">
+                      <a class="blog-post__author-link" href="#" title="Posts by Felix Wolfe" rel="author" tabindex="0">Felix Wolfe</a>
+                  </div><!--/.blog-post__author -->
+
+                  <div class="blog-post__comments-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-comment-regular"></use>
+                    </svg>
+                    <a class="blog-post__comments-link">1 Comment</a>
+                  </div><!--/.blog-post__comment-wrap -->
+
+                  <div class="blog-post__date-wrap">
+                    <svg class="blog-post__icon" width="12" height="12">
+                      <use xlink:href="#sprite-clock-regular"></use>
+                    </svg>
+                    <time class="blog-post__date" datetime='2018-12-10'>2018-12-10</time>
+                  </div>
+                </div><!--/.blog-post__meta -->
+              </div><!--/.blog-post__inner-wrap -->
+            </article><!--/.blog-post -->
+          </div><!--/.blog-posts__slider-item -->
+        </div><!--/.blog-posts__slider -->
+      </section><!--/.blog-posts -->
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <section class="page-footer__widgets widgets">
+      <h2 class="visually-hidden">Виджеты</h2>
+      <div class="widgets__container-wrap container">
+        <div class="widgets__row-wrap row">
+          <div class="widgets__column cox-xs-12 col-lg-4">
+            <aside class="widget widget--most-popular">
+              <div class="widget__title-wrap">
+                <h4 class="widget__title">Most Popular</h4>
+              </div>
+              <div class="widget__inner-wrap">
+                <ul class="widget__list">
+                  <li class="widget__item">
+                    <figure class="widget-post__img-wrap">
+                      <a class="widget-post__img-link" href="#">
+                        <img class="widget-post__img" src="img/widget-pots-img-1.jpg" alt="widget-post-img-1  " width="150" height="150">
+                      </a>
+                    </figure>
+                    <div class="widget-post__inner-wrap">
+                      <div class="widget-post__title-wrap">
+                        <h2 class="widget-post__title">
+                          <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                            Everything need to know about a fashionable life
+                          </a>
+                        </h2>
+                      </div><!--/.widget-post__title-wrap -->
+                      <div class="widget-post__meta-wrap">
+                        <div class="widget-post__meta-date">
+                          <svg class="widget-post__meta-icon" width="12" height="12">
+                            <use xlink:href="#sprite-clock-regular"></use>
+                          </svg>
+                          <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                        </div>
+                      </div><!--/.widget-post__meta-wrap -->
+                    </div><!--/.widget-post__inner-wrap -->
+                  </li><!--/.widget__item -->
+                  <li class="widget__item">
+                    <figure class="widget-post__img-wrap">
+                      <a class="widget-post__img-link" href="#">
+                        <img class="widget-post__img" src="img/widget-pots-img-2.jpg" alt="widget-post-img-1  " width="150" height="150">
+                      </a>
+                    </figure>
+                    <div class="widget-post__inner-wrap">
+                      <div class="widget-post__title-wrap">
+                        <h2 class="widget-post__title">
+                          <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                            Everything need to know about a fashionable life
+                          </a>
+                        </h2>
+                      </div><!--/.widget-post__title-wrap -->
+                      <div class="widget-post__meta-wrap">
+                        <div class="widget-post__meta-date">
+                          <svg class="widget-post__meta-icon" width="12" height="12">
+                            <use xlink:href="#sprite-clock-regular"></use>
+                          </svg>
+                          <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                        </div>
+                      </div><!--/.widget-post__meta-wrap -->
+                    </div><!--/.widget-post__inner-wrap -->
+                  </li><!--/.widget__item -->
+                </ul><!--/.widget-list -->
+              </div><!--/.widget__inner-wrap -->
+            </aside>
+          </div>
+
+          <div class="widgets__column cox-xs-12 col-lg-4">
+            <aside class="widget widget--most-popular">
+              <div class="widget__title-wrap">
+                <h4 class="widget__title">Social widget</h4>
+              </div>
+              <div class="widget__inner-wrap">
+                <ul class="widget__social-list">
+                  <li class="widget__social-item">
+                    <a class="widget__social-link" href="#" rel="nofollow">
+                      <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                    </a>
+                  </li>
+                  <li class="widget__social-item">
+                    <a class="widget__social-link" href="#" rel="nofollow">
+                      <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                    </a>
+                  </li>
+                  <li class="widget__social-item">
+                    <a class="widget__social-link" href="#" rel="nofollow">
+                      <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                    </a>
+                  </li>
+                  <li class="widget__social-item">
+                    <a class="widget__social-link" href="#" rel="nofollow">
+                      <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                    </a>
+                  </li>
+                </ul><!--/.widget-list -->
+              </div><!--/.widget__inner-wrap -->
+            </aside>
+          </div>
+
+          <div class="widgets__column cox-xs-12 col-lg-4">
+            <aside class="widget widget--latest-articles">
+              <div class="widget__title-wrap">
+                <h4 class="widget__title">Last Articles</h4>
+              </div>
+              <div class="widget__inner-wrap">
+                <ul class="widget__list">
+                  <li class="widget__item">
+                    <figure class="widget-post__img-wrap">
+                      <a class="widget-post__img-link" href="#">
+                        <img class="widget-post__img" src="img/widget-pots-img-2.jpg" alt="widget-post-img-1  " width="150" height="150">
+                      </a>
+                    </figure>
+                    <div class="widget-post__inner-wrap">
+                      <div class="widget-post__title-wrap">
+                        <h2 class="widget-post__title">
+                          <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                            Everything need to know about a fashionable life
+                          </a>
+                        </h2>
+                      </div><!--/.widget-post__title-wrap -->
+                      <div class="widget-post__meta-wrap">
+                        <div class="widget-post__meta-date">
+                          <svg class="widget-post__meta-icon" width="12" height="12">
+                            <use xlink:href="#sprite-clock-regular"></use>
+                          </svg>
+                          <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                        </div>
+                      </div><!--/.widget-post__meta-wrap -->
+                    </div><!--/.widget-post__inner-wrap -->
+                  </li><!--/.widget__item -->
+                  <li class="widget__item">
+                    <figure class="widget-post__img-wrap">
+                      <a class="widget-post__img-link" href="#">
+                        <img class="widget-post__img" src="img/widget-pots-img-1.jpg" alt="widget-post-img-1  " width="150" height="150">
+                      </a>
+                    </figure>
+                    <div class="widget-post__inner-wrap">
+                      <div class="widget-post__title-wrap">
+                        <h2 class="widget-post__title">
+                          <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                            Everything need to know about a fashionable life
+                          </a>
+                        </h2>
+                      </div><!--/.widget-post__title-wrap -->
+                      <div class="widget-post__meta-wrap">
+                        <div class="widget-post__meta-date">
+                          <svg class="widget-post__meta-icon" width="12" height="12">
+                            <use xlink:href="#sprite-clock-regular"></use>
+                          </svg>
+                          <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                        </div>
+                      </div><!--/.widget-post__meta-wrap -->
+                    </div><!--/.widget-post__inner-wrap -->
+                  </li><!--/.widget__item -->
+                </ul><!--/.widget-list -->
+              </div><!--/.widget__inner-wrap -->
+            </aside>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="page-footer__copyright-wrap copyright">
+      <h2 class="visually-hidden">Copyright</h2>
+      <p class="copyright__desc">© 2018 ALL RIGHT RESERVED - VEKTOR MEDIA</p>
+    </section>
+  </footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>

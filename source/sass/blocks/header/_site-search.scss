@@ -1,0 +1,137 @@
+.site-search {
+  padding: 12px;
+  background-color: transparent;
+
+  border-bottom: 1px solid $main-nav-border-color;
+}
+
+.site-search__form {
+  position: relative;
+}
+
+.site-search__search-field {
+  padding: 6px 20px;
+
+  width: 100%;
+  min-height: 38px;
+
+  display: inline-block;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+
+  background-color: $site-search-bg-color;
+
+  color: $site-search-field-text-color;
+  text-decoration: none;
+
+  border: 0;
+  border-radius: 38px;
+
+  border-top: 1px solid $main-nav-border-color;
+  border-bottom: 1px solid $main-nav-border-color;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+
+.site-search__search-field::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: lighten($site-search-field-text-color, 20);
+  letter-spacing: 0.2px;
+}
+
+.site-search__btn-submit {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+
+  min-width: 34px;
+  min-height: 34px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $site-search-btn-bg-color;
+
+  &:focus,
+  &:hover {
+    background-color: $site-search-btn-bg-color;
+  }
+
+  &:active {
+    background-color: darken($site-search-btn-bg-color, 5);
+  }
+}
+
+.site-search__icon {
+  color: $white;
+
+  width: 18px;
+  height: 18px;
+}
+
+@include desktop-width {
+  .site-search {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    border: 0;
+    background-color: transparent;
+  }
+
+  .site-search__form {
+    width: 300px;
+  }
+
+  .site-search__search-field {
+    min-height: 40px;
+
+    background-color: transparent;
+    border: 1px solid $main-nav-border-color;
+
+    &:focus,
+    &:hover {
+      border-color: darken($main-nav-border-color, 15);
+    }
+  }
+
+  .site-search__btn-submit {
+    top: 2px;
+    right: 2px;
+
+    min-width: 36px;
+    min-height: 36px;
+
+    border: none;
+    background-color: $site-search-btn-bg-color;
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: darken($site-search-btn-bg-color, 5);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  .site-search__icon {
+    width: 17px;
+    height: 17px;
+  }
+}

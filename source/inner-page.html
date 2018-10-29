@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GdeFit — page</title>
+  <link rel="preload" href="fonts/montserrat/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rajdhani-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement('picture');
+  </script>
+
+  <script src="js/picturefill.min.js" async></script>
+</head>
+<body class="inner-page">
+<div class="inline-sprite">
+  <include src="build/img/svg/sprite.svg"></include>
+</div>
+
+<header class="page-header page-header--index-page">
+  <div class="page-header__container-wrap container-fluid">
+    <div class="row no-gutters">
+      <div class="col-sm-12 page-header__nav main-nav">
+
+        <div class="main-nav__head-wrap">
+          <div class="main-nav__brand">
+            <a class="main-nav__brand-link" href="#">
+              <img class="main-nav__brand-img" src="img/gdefit-logo.png" alt="Site Logo" title="Logo description">
+            </a>
+          </div>
+
+          <button class="main-nav__trigger" type="button" data-toggle="collapse" data-target="#mainMenuCollapse" aria-expanded="false" aria-controls="mainMenuCollapse">
+            <span></span>
+          </button>
+        </div>
+
+        <div class="main-nav__collapse collapse main-nav__collapse--nojs" id="mainMenuCollapse">
+          <div class="main-nav__height-controller">
+            <div class="main-nav__wrapper container">
+              <div class="main-nav__social social-links col-lg-4">
+                <div class="social-links__main-wrapper">
+                  <a class="social-links__toggle social-links__toggle--active" aria-label="Кнопка социальных сетей">
+                    <svg class="social-links__toggle-icon" width="16" height="16">
+                      <use xlink:href="#sprite-icon-share"></use>
+                    </svg>
+                  </a>
+
+                  <div class="social-links__wrapper">
+                    <ul class="social-links__list">
+                      <li class="social-links__item">
+                        <a class="social-links__link social-links__link--facebook" href="#" target="_blank" title="Facebook" rel="nofollow">
+                          <svg class="social-links__icon" width="22" height="22">
+                            <use xlink:href="#sprite-icon-facebook"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-links__item">
+                        <a class="social-links__link social-links__link--instagram" href=# target="_blank" title="Instagram" rel="nofollow">
+                          <svg class="social-links__icon" width="22" height="22">
+                            <use xlink:href="#sprite-icon-instagram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="social-links__item">
+                        <a class="social-links__link social-links__link--telegram" href="#" target="_blank" title="Telegram" rel="nofollow">
+                          <svg class="social-links__icon" width="22" height="22">
+                            <use xlink:href="#sprite-icon-telegram"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-nav__main-brand page-header__brand col-lg-4">
+                <div class="page-header__logo main-logo">
+                  <a class="main-logo__link" href="#" tabindex="1">
+                    <img class="main-logo__img" src="img/gdefit-logo.png" alt="Site Logo" title="Logo description">
+                  </a>
+                </div>
+              </div>
+
+              <div class="main-nav__search site-search col-lg-4">
+                <form method="get" class="site-search__form" role="search" action="#">
+                  <input class="site-search__search-field" type="search" name="search" placeholder="Поиск...">
+                  <button class="site-search__btn-submit" type="submit" >
+                    <svg class="site-search__icon" width="20" height="20">
+                      <use xlink:href="#sprite-icon-search"></use>
+                    </svg>
+                    <span class="visually-hidden">Поиск по сайту</span>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+
+            <nav class="main-nav__container">
+              <ul class="main-nav__list site-nav-list">
+                <li class="site-nav-list__item">
+                  <a href="index.html" class="site-nav-list__link site-nav-list__link--sub-menu" title="Home">Главная</a>
+
+                  <button class="sub-menu__toggle" type="button" data-toggle="collapse" data-target="#subMenuHomeItem" aria-expanded="false" aria-controls="subMenuHomeItem">
+                    <span class="visually-hidden">Открыть подменю</span>
+                  </button>
+                  <div class="site-nav-list__sub-menu sub-menu" id="subMenuHomeItem">
+                    <ul class="sub-menu__list">
+                      <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link"  title="Home">Подменю 1</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link"  title="Home">Home Link 2</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="site-nav-list__item site-nav-list__item--active">
+                  <a href="inner-page.html" class="site-nav-list__link" title="Features">Движение</a>
+                </li>
+                <li class="site-nav-list__item">
+                  <a href="#" class="site-nav-list__link site-nav-list__link--sub-menu" title="Travel">Здоровье</a>
+
+                  <button class="sub-menu__toggle" type="button" data-toggle="collapse" data-target="#subMenuTravelItem" aria-expanded="false" aria-controls="subMenuTravelItem">
+                    <span class="visually-hidden">Открыть подменю</span>
+                  </button>
+                  <div class="site-nav-list__sub-menu sub-menu" id="subMenuTravelItem">
+                    <ul class="sub-menu__list">
+                      <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link"  title="Home">Home Link 1</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link" title="Home">Home Link 2</a>
+                      </li>
+                      <li class="sub-menu__item">
+                        <a href="#" class="sub-menu__link"  title="Home">Home Link 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="site-nav-list__item">
+                  <a href="#" class="site-nav-list__link" title="Lifestyle">Мотивация</a>
+                </li>
+                <li class="site-nav-list__item">
+                  <a href="#" class="site-nav-list__link" title="Music">Питание</a>
+                </li>
+                <li class="site-nav-list__item">
+                  <a href="#" class="site-nav-list__link" title="Shop">Места</a>
+                </li>
+                <li class="site-nav-list__item">
+                  <a href="#" class="site-nav-list__link" title="Contact Us">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <div class="page-main__wrapper">
+    <section class="post-header">
+      <div class="post-header__container container">
+        <div class="post-header__title-wrap">
+          <h1 class="post-header__title">Заголовок поста внутренней страницы сайта</h1>
+        </div>
+
+        <div class="post-header__publication-info">
+          <div class="post-header__author">
+            <p class="post-header__author-name">Name Surname</p>
+          </div>
+
+          <div class="post-header__date-wrap">
+            <time class="post-header__date" datetime="2018-10-24">24 Октябрь, 2018</time>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="posts-content">
+      <h2 class="visually-hidden">Контент поста</h2>
+      <div class="posts-content__container container">
+        <div class="posts-content__row row">
+          <div class="posts-content__col--breadcrumb col-12">
+            <nav class="posts-content__breadcrumb breadcrumb" aria-label="breadcrumb">
+              <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                  <a class="breadcrumb__link" href="#">Features</a>
+                </li>
+                <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">Target feature</li>
+              </ol>
+            </nav>
+          </div>
+          <div class="posts-content__left-col posts-content__left-col--content col-sm-12 col-lg-8">
+            <div class="posts-content__announce">
+              В этот раз дизайнеры adidas вдохновлялись амбассадорами бренда — певицей Дуа Липой, супермоделью Карли Клосс, актрисой Шэй Митчелл, блогером Ханной Бронфман и теннисисткой Гарбинье Мугурусой. Они же снялись в лукбуке коллекции.
+            </div>
+            <div>
+              <h2>Подзаголовок поста</h2>
+              <p>Да, этот совет работает. Но <a href="#">только</a> если вы не будете пытаться отвлечь человека музыкой, весёлыми историями или пейзажами за окном. Лучше всего, если вы попросите его о чём-то. Любое, даже самое пустяковое дело хотя бы ненадолго отвлечёт человека от мыслей о произошедшем и даст ему понимание того, что он делает что-то полезное для других.</p>
+              <img src="img/basketball-court.jpg" alt="Баскетбольная площадка">
+              <ol>
+                <li>
+                  Сначала нужно выбрать время. Например, разбирать хлам в течение часа каждое воскресенье. Тут важна дисциплина и регулярность                  </li>
+                <li>
+                  Начните с малого. Выберете один шкаф, например с одеждой. Берите вещь одну за другой и спрашивайте себя — я люблю эту вещь?
+                </li>
+              </ol>
+              <ul>
+                <li>
+                  Сначала нужно выбрать время. Например, разбирать хлам в течение часа каждое воскресенье. Тут важна дисциплина и регулярность                  </li>
+                <li>
+                  Начните с малого. Выберете один шкаф, например с одеждой. Берите вещь одну за другой и спрашивайте себя — я люблю эту вещь?
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Подзаголовок поста</h2>
+              <p>Да, этот совет работает. Но <a href="#">только</a> если вы не будете пытаться отвлечь человека музыкой, весёлыми историями или пейзажами за окном. Лучше всего, если вы попросите его о чём-то. Любое, даже самое пустяковое дело хотя бы ненадолго отвлечёт человека от мыслей о произошедшем и даст ему понимание того, что он делает что-то полезное для других.</p>
+              <img src="img/basketball-court.jpg" alt="Баскетбольная площадка">
+              <ol>
+                <li>
+                  Сначала нужно выбрать время. Например, разбирать хлам в течение часа каждое воскресенье. Тут важна дисциплина и регулярность                  </li>
+                <li>
+                  Начните с малого. Выберете один шкаф, например с одеждой. Берите вещь одну за другой и спрашивайте себя — я люблю эту вещь?
+                </li>
+              </ol>
+              <ul>
+                <li>
+                  Сначала нужно выбрать время. Например, разбирать хлам в течение часа каждое воскресенье. Тут важна дисциплина и регулярность                  </li>
+                <li>
+                  Начните с малого. Выберете один шкаф, например с одеждой. Берите вещь одну за другой и спрашивайте себя — я люблю эту вещь?
+                </li>
+              </ul>
+            </div>
+            <div class="posts-content__share">
+              <p class="posts-content__share-desc">
+                Поделитесь в социальных сетях:
+              </p>
+              <div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir"></div>
+            </div>
+          </div>
+          <div class="posts-content__right-col posts-content__right-col--banner col-sm-12 col-lg-4">
+            <aside class="posts-content__banner">
+              <img src="img/banner-300x600-new.jpg" alt="Тестовый баннер" title="Баннер 300x600" width="300" height="600">
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interesting-posts">
+      <div class="interesting-posts__container container">
+        <div class="interesting-posts__row row">
+
+          <div class="interesting-posts__title-wrap col-12">
+            <h2 class="interesting-posts__title">Вам будет интересно</h2>
+          </div>
+
+          <div class="interesting-posts__main-wrap col-12">
+            <div class="interesting-post__wrap">
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                  <b class="interesting-post__views">
+                    <svg class="interesting-post__views-icon" width="14" height="14">
+                      <use xlink:href="#sprite-icon-eye"></use>
+                    </svg>
+                    <span class="interesting-post__views-text">
+                      1000
+                    </span>
+                  </b>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                  <b class="interesting-post__views">
+                    <svg class="interesting-post__views-icon" width="14" height="14">
+                      <use xlink:href="#sprite-icon-eye"></use>
+                    </svg>
+                    <span class="interesting-post__views-text">
+                      1000
+                    </span>
+                  </b>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                  <b class="interesting-post__views">
+                    <svg class="interesting-post__views-icon" width="14" height="14">
+                      <use xlink:href="#sprite-icon-eye"></use>
+                    </svg>
+                    <span class="interesting-post__views-text">
+                      1000
+                    </span>
+                  </b>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+              <div class="interesting-post__img-wrap">
+                <a class="interesting-post__link-img" href="#">
+                  <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                </a>
+              </div>
+
+              <div class="interesting-post__meta-wrap">
+                <a class="interesting-post__rubric" href="#">Места</a>
+                <b class="interesting-post__views">
+                  <svg class="interesting-post__views-icon" width="14" height="14">
+                    <use xlink:href="#sprite-icon-eye"></use>
+                  </svg>
+                  <span class="interesting-post__views-text">
+                    1000
+                  </span>
+                </b>
+              </div>
+
+              <div class="interesting-post__desc-wrap">
+                <h3 class="interesting-post__title">
+                  <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                </h3>
+
+                <p class="interesting-post__desc">
+                  Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                </p>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="interesting-posts">
+      <div class="interesting-posts__container container">
+        <div class="interesting-posts__row row">
+
+          <div class="interesting-posts__title-wrap col-12">
+            <h2 class="interesting-posts__title">Чтитайте также</h2>
+          </div>
+
+          <div class="interesting-posts__main-wrap col-12">
+            <div class="interesting-post__wrap">
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+              <article class="interesting-post">
+                <div class="interesting-post__img-wrap">
+                  <a class="interesting-post__link-img" href="#">
+                    <img class="interesting-post__img" src="img/interesting-post-img-test.jpg" alt="Изображение интересного поста" width="600" height="600">
+                  </a>
+                </div>
+
+                <div class="interesting-post__meta-wrap">
+                  <a class="interesting-post__rubric" href="#">Места</a>
+                </div>
+
+                <div class="interesting-post__desc-wrap">
+                  <h3 class="interesting-post__title">
+                    <a class="interesting-post__title-link" href="#">10 книг, которые стоит прочитать этой осенью</a>
+                  </h3>
+
+                  <p class="interesting-post__desc">
+                    Чтобы безопасно выполнить это упражнение, нужно выбрать правильный угол, под которым вы будете делать присед. Это непросто, особенно для новичков: гриф тренажёра движется в одной плоскости, из-за чего движение бёдер при приседании становится неестественным, а вы рискуете получить травму.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <section class="page-footer__widgets widgets">
+    <h2 class="visually-hidden">Виджеты</h2>
+    <div class="widgets__container-wrap container">
+      <div class="widgets__row-wrap row">
+        <div class="widgets__column cox-xs-12 col-lg-4">
+          <aside class="widget widget--most-popular">
+            <div class="widget__title-wrap">
+              <h4 class="widget__title">Most Popular</h4>
+            </div>
+            <div class="widget__inner-wrap">
+              <ul class="widget__list">
+                <li class="widget__item">
+                  <figure class="widget-post__img-wrap">
+                    <a class="widget-post__img-link" href="#">
+                      <img class="widget-post__img" src="img/widget-pots-img-1.jpg" alt="widget-post-img-1  " width="150" height="150">
+                    </a>
+                  </figure>
+                  <div class="widget-post__inner-wrap">
+                    <div class="widget-post__title-wrap">
+                      <h2 class="widget-post__title">
+                        <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                          Everything need to know about a fashionable life
+                        </a>
+                      </h2>
+                    </div><!--/.widget-post__title-wrap -->
+                    <div class="widget-post__meta-wrap">
+                      <div class="widget-post__meta-date">
+                        <svg class="widget-post__meta-icon" width="12" height="12">
+                          <use xlink:href="#sprite-clock-regular"></use>
+                        </svg>
+                        <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                      </div>
+                    </div><!--/.widget-post__meta-wrap -->
+                  </div><!--/.widget-post__inner-wrap -->
+                </li><!--/.widget__item -->
+                <li class="widget__item">
+                  <figure class="widget-post__img-wrap">
+                    <a class="widget-post__img-link" href="#">
+                      <img class="widget-post__img" src="img/widget-pots-img-2.jpg" alt="widget-post-img-1  " width="150" height="150">
+                    </a>
+                  </figure>
+                  <div class="widget-post__inner-wrap">
+                    <div class="widget-post__title-wrap">
+                      <h2 class="widget-post__title">
+                        <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                          Everything need to know about a fashionable life
+                        </a>
+                      </h2>
+                    </div><!--/.widget-post__title-wrap -->
+                    <div class="widget-post__meta-wrap">
+                      <div class="widget-post__meta-date">
+                        <svg class="widget-post__meta-icon" width="12" height="12">
+                          <use xlink:href="#sprite-clock-regular"></use>
+                        </svg>
+                        <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                      </div>
+                    </div><!--/.widget-post__meta-wrap -->
+                  </div><!--/.widget-post__inner-wrap -->
+                </li><!--/.widget__item -->
+              </ul><!--/.widget-list -->
+            </div><!--/.widget__inner-wrap -->
+          </aside>
+        </div>
+
+        <div class="widgets__column cox-xs-12 col-lg-4">
+          <aside class="widget widget--most-popular">
+            <div class="widget__title-wrap">
+              <h4 class="widget__title">Social widget</h4>
+            </div>
+            <div class="widget__inner-wrap">
+              <ul class="widget__social-list">
+                <li class="widget__social-item">
+                  <a class="widget__social-link" href="#" rel="nofollow">
+                    <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                  </a>
+                </li>
+                <li class="widget__social-item">
+                  <a class="widget__social-link" href="#" rel="nofollow">
+                    <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                  </a>
+                </li>
+                <li class="widget__social-item">
+                  <a class="widget__social-link" href="#" rel="nofollow">
+                    <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                  </a>
+                </li>
+                <li class="widget__social-item">
+                  <a class="widget__social-link" href="#" rel="nofollow">
+                    <img class="widget__social-img" src="img/widget-social-1.jpg" alt="Social image">
+                  </a>
+                </li>
+              </ul><!--/.widget-list -->
+            </div><!--/.widget__inner-wrap -->
+          </aside>
+        </div>
+
+        <div class="widgets__column cox-xs-12 col-lg-4">
+          <aside class="widget widget--latest-articles">
+            <div class="widget__title-wrap">
+              <h4 class="widget__title">Last Articles</h4>
+            </div>
+            <div class="widget__inner-wrap">
+              <ul class="widget__list">
+                <li class="widget__item">
+                  <figure class="widget-post__img-wrap">
+                    <a class="widget-post__img-link" href="#">
+                      <img class="widget-post__img" src="img/widget-pots-img-2.jpg" alt="widget-post-img-1  " width="150" height="150">
+                    </a>
+                  </figure>
+                  <div class="widget-post__inner-wrap">
+                    <div class="widget-post__title-wrap">
+                      <h2 class="widget-post__title">
+                        <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                          Everything need to know about a fashionable life
+                        </a>
+                      </h2>
+                    </div><!--/.widget-post__title-wrap -->
+                    <div class="widget-post__meta-wrap">
+                      <div class="widget-post__meta-date">
+                        <svg class="widget-post__meta-icon" width="12" height="12">
+                          <use xlink:href="#sprite-clock-regular"></use>
+                        </svg>
+                        <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                      </div>
+                    </div><!--/.widget-post__meta-wrap -->
+                  </div><!--/.widget-post__inner-wrap -->
+                </li><!--/.widget__item -->
+                <li class="widget__item">
+                  <figure class="widget-post__img-wrap">
+                    <a class="widget-post__img-link" href="#">
+                      <img class="widget-post__img" src="img/widget-pots-img-1.jpg" alt="widget-post-img-1  " width="150" height="150">
+                    </a>
+                  </figure>
+                  <div class="widget-post__inner-wrap">
+                    <div class="widget-post__title-wrap">
+                      <h2 class="widget-post__title">
+                        <a class="widget-post__title-link" href="#" title="Widget-Post title">
+                          Everything need to know about a fashionable life
+                        </a>
+                      </h2>
+                    </div><!--/.widget-post__title-wrap -->
+                    <div class="widget-post__meta-wrap">
+                      <div class="widget-post__meta-date">
+                        <svg class="widget-post__meta-icon" width="12" height="12">
+                          <use xlink:href="#sprite-clock-regular"></use>
+                        </svg>
+                        <a class="widget-post__meta-link" href="#">March 10, 2016</a>
+                      </div>
+                    </div><!--/.widget-post__meta-wrap -->
+                  </div><!--/.widget-post__inner-wrap -->
+                </li><!--/.widget__item -->
+              </ul><!--/.widget-list -->
+            </div><!--/.widget__inner-wrap -->
+          </aside>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="page-footer__copyright-wrap copyright">
+    <h2 class="visually-hidden">Copyright</h2>
+    <p class="copyright__desc">© 2018 ALL RIGHT RESERVED - VEKTOR MEDIA</p>
+  </section>
+</footer>
+
+<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

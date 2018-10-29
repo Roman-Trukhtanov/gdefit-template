@@ -1,0 +1,115 @@
+.site-nav-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  list-style: none;
+
+  overflow: hidden;
+}
+
+.site-nav-list__item {
+  position: relative;
+  border: 0;
+  border-bottom: 1px solid $main-nav-border-color;
+}
+
+.site-nav-list__link {
+  position: relative;
+
+  padding: 20px 20px;
+  margin: 0;
+
+  display: block;
+
+  font-family: $lobster-font;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: $site-nav-link-color;
+  //text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    color: $site-nav-hover-link-color;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba($site-nav-hover-link-color, 0.7);
+  }
+}
+
+.site-nav-list__item--active .site-nav-list__link {
+  color: $site-nav-active-link-color;
+  background-color: $site-nav-active-link-bg-color;
+
+  &:focus,
+  &:hover {
+    color: rgba($site-nav-active-link-color, 0.75);
+  }
+
+  &:active {
+    color: rgba($site-nav-active-link-color, 0.5);
+  }
+}
+
+.site-nav-list__sub-menu {
+  border-top: 1px solid $main-nav-border-color;
+}
+
+@include desktop-width {
+  .site-nav-list {
+    flex-direction: row;
+  }
+
+  .site-nav-list__item {
+    position: static;
+
+    border: 0;
+  }
+
+  .site-nav-list__sub-menu {
+    border: 0;
+  }
+
+  .site-nav-list__link:focus ~ .site-nav-list__sub-menu {
+    display: block;
+  }
+
+  .site-nav-list__item:hover .site-nav-list__sub-menu {
+    display: block;
+  }
+
+  .site-nav-list__link--sub-menu {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 0;
+      height: 0;
+
+      border: none;
+
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    &:focus::after {
+      border: 8px solid transparent;
+      border-bottom-color: $submenu-bg-color;
+    }
+  }
+
+  .site-nav-list__item:hover .site-nav-list__link--sub-menu::after {
+    border: 8px solid transparent;
+    border-bottom-color: $submenu-bg-color;
+  }
+}

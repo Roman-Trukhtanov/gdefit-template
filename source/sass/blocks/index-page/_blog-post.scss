@@ -1,0 +1,163 @@
+.blog-post {
+  position: relative;
+  width: 100%;
+  background-color: $gray-200;
+}
+
+.blog-post__link {
+  position: relative;
+  display: block;
+
+  background-color: $black;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+}
+
+.blog-post__img {
+  transition: 0.3s all linear;
+  background-color: $gray-200;
+}
+
+.blog-post__link:focus .blog-post__img,
+.blog-post:hover .blog-post__img {
+  opacity: 0.6;
+}
+
+.blog-post__cat-list {
+  padding: 0;
+  list-style: none;
+}
+
+.blog-post__cat-link {
+  margin-right: 5px;
+  padding: 3px 7px 1px;
+
+  display: inline-block;
+
+  font-family: $rajdhani-font;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background-color: $cat-bg-color;
+  color: $cat-link-color;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+    color: $cat-link-color;
+  }
+}
+
+.blog-post__inner-wrap {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+
+  width: 100%;
+  box-shadow: inset 0 -170px 110px -65px rgba($black, 0.7);
+}
+
+.blog-post__img-wrap {
+  margin: 0;
+}
+
+.blog-post__title-wrap {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.blog-post__title {
+  margin: 0;
+
+  font-family: $montserrat-font;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.1em;
+}
+
+.blog-post__title-link {
+  display: inline-block;
+  vertical-align: middle;
+
+  color: $white;
+
+  &:focus,
+  &:hover {
+    outline: none;
+
+    color: $slide-title-color;
+    text-decoration: none;
+  }
+}
+
+.blog-post__meta {
+  color: $slide-meta-color;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-post__author,
+.blog-post__comments-wrap,
+.blog-post__date-wrap {
+  margin-right: 15px;
+}
+
+.blog-post__author-link,
+.blog-post__comments-link,
+.blog-post__date {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: $rajdhani-font;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: $slide-meta-color;
+
+  &:focus,
+  &:hover {
+    color: $slide-meta-color;
+  }
+}
+
+.blog-post__icon {
+  margin-right: 2px;
+}
+
+.blog-post__date-wrap {
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 1px;
+    top: 10px;
+
+    width: 8px;
+    height: 1px;
+
+    background-color: $widget-title-border-color;
+  }
+}
+
+.blog-post__comments-link {
+  &:focus,
+  &:hover {
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: none;
+  }
+}

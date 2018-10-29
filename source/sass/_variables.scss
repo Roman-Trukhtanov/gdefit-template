@@ -1,0 +1,207 @@
+/* stylelint-disable */
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+//
+// Color system
+//
+$white:    #ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000000;
+
+$grays: ();
+
+$grays: map-merge(
+    (
+      "100": $gray-100,
+      "200": $gray-200,
+      "300": $gray-300,
+      "400": $gray-400,
+      "500": $gray-500,
+      "600": $gray-600,
+      "700": $gray-700,
+      "800": $gray-800,
+      "900": $gray-900
+    ),
+    $grays
+);
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$slide-title-color: #92fdfb;
+$slide-arrow-hover-bg-color: #00a0fe;
+$slide-meta-color: #efefef;
+
+$site-search-btn-bg-color: #00a0fe;
+$site-search-field-text-color: #424242;
+$site-search-bg-color: #efefef;
+
+//$site-search-bg-color: #65cdcd;
+
+$social-links-link-color: #00a0fe;
+
+$cat-bg-color: #00a0fe;
+$cat-link-color: #ffffff;
+
+$main-nav-border-color: #eeeeee;
+
+//$site-nav-link-color: #111111;
+$site-nav-link-color: #0078bf;
+$site-nav-hover-link-color: #0056b3;
+$site-nav-active-link-bg-color: #efefef;
+$site-nav-active-link-color: #000000;
+
+$widget-title-border-color: #eeeeee;
+$widget-item-border-color: #222222;
+$widget-social-link-hover: #111111;
+
+$submenu-bg-color: #75cfff;
+$submenu-toggle-bg-color: #ffffff;
+$submenu-link-color: #ffffff;
+
+/* Inner Page */
+$inner-page-global-link-color: #0056b3;
+$list-pseudo-item-border-color: #0056b3;
+
+$post-header-bg-gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+$breadcrumb-text-color: #000000;
+$posts-content-bg-color: #eaeaea;
+$posts-anounce-color: #6f6f6f;
+
+$interesting-post-text-color: #777676;
+$interesting-post-rubric-color: #0056b3;
+$interesting-post-title-color: #333333;
+
+$colors: ();
+
+$colors: map-merge(
+    (
+      "blue":       $blue,
+      "indigo":     $indigo,
+      "purple":     $purple,
+      "pink":       $pink,
+      "red":        $red,
+      "orange":     $orange,
+      "yellow":     $yellow,
+      "green":      $green,
+      "teal":       $teal,
+      "cyan":       $cyan,
+      "white":      $white,
+      "gray":       $gray-600,
+      "gray-dark":  $gray-800
+    ),
+    $colors
+);
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: ();
+
+$theme-colors: map-merge(
+    (
+      "primary":    $primary,
+      "secondary":  $secondary,
+      "success":    $success,
+      "info":       $info,
+      "warning":    $warning,
+      "danger":     $danger,
+      "light":      $light,
+      "dark":       $dark
+    ),
+    $theme-colors
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                $gray-900;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+
+//Fonts
+
+$rajdhani-font: "Rajdhani", "Arial", sans-serif;
+$montserrat-font: "Montserrat", "Arial", sans-serif;
+$lobster-font: "Lobster", "Arial", cursive;
+$merriweather-font: "Merriweather", "Arial", serif;
+
+
+//Display Includes
+$tablet: 768px;
+$desktop: 992px;
+$hd-desktop: 1200px;
+$only-tablet: 991px;
+
+@mixin only-tablet-width {
+  @media (max-width: #{$only-tablet}) {
+    @content;
+  }
+}
+
+@mixin tablet-width {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop-width {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin hd-desktop-width {
+  @media (min-width: #{$hd-desktop}) {
+    @content;
+  }
+}

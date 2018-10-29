@@ -1,0 +1,123 @@
+.post-header {
+  background: $post-header-bg-gradient, url("../img/inner-page-title-img-test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.post-header__container {
+  position: relative;
+
+  min-height: 450px;
+}
+
+.post-header__title-wrap {
+  padding: 0 15px;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+
+  transform: translate(0, -50%);
+}
+
+.post-header__title {
+  margin: 0 auto;
+
+  max-width: 720px;
+
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: 0;
+
+  color: $white;
+
+  text-align: center;
+
+  overflow-y: hidden;
+}
+
+.post-header__publication-info {
+  width: 100%;
+
+  position: absolute;
+  padding: 0 15px;
+
+  display: flex;
+  justify-content: space-between;
+
+  left: 0;
+  bottom: 20px;
+}
+
+.post-header__author,
+.post-header__date-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+
+    margin-right: 8px;
+    margin-bottom: 2px;
+
+    width: 18px;
+    height: 16px;
+
+    background-image: none;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.post-header__author {
+  &::before {
+    background-image: url("../img/svg/icon-user.svg");
+  }
+}
+
+.post-header__date-wrap {
+  &::before {
+    background-image: url("../img/svg/icon-alarm-clock.svg");
+  }
+}
+
+.post-header__author-name {
+  margin: 0;
+
+  color: $white;
+  text-transform: uppercase;
+}
+
+.post-header__date {
+  margin: 0;
+
+  color: $white;
+  text-transform: uppercase;
+}
+
+@include tablet-width {
+  .post-header__title {
+    max-width: 620px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+@include desktop-width {
+  .post-header__title {
+    max-width: 720px;
+    max-height: 180px;
+
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
