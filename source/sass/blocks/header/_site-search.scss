@@ -7,6 +7,10 @@
 
 .site-search__form {
   position: relative;
+
+  label {
+    width: 100%;
+  }
 }
 
 .site-search__search-field {

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   background-color: $gray-200;
+  font-family: $opensans-font;
 }
 
 .blog-post__link {
@@ -33,11 +34,8 @@
 
 .blog-post__cat-link {
   margin-right: 5px;
-  padding: 3px 7px 1px;
-
+  padding: 2px 6px 2px;
   display: inline-block;
-
-  font-family: $rajdhani-font;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -114,7 +112,6 @@
   display: inline-block;
   vertical-align: middle;
 
-  font-family: $rajdhani-font;
   font-size: 14px;
   line-height: 1.4em;
   font-weight: 600;

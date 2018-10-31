@@ -17,7 +17,7 @@
   padding-bottom: 10px;
 
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 26px;
 
   color: $posts-anounce-color;
@@ -90,14 +90,12 @@
 
 @include tablet-width {
   .posts-content__announce {
-    font-size: 20px;
     line-height: 32px;
   }
 }
 
 @include desktop-width {
   .posts-content__announce {
-    font-size: 22px;
     line-height: 30px;
   }
 }
@@ -108,8 +106,9 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 992px) {
   .posts-content__right-col {
     padding: 0;
+    display: none;
   }
 }
