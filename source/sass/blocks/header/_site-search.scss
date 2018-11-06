@@ -5,6 +5,11 @@
   border-bottom: 1px solid $main-nav-border-color;
 }
 
+.site-search__label {
+  margin: 0;
+  display: block;
+}
+
 .site-search__form {
   position: relative;
 }

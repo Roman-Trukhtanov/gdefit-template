@@ -79,7 +79,7 @@
 
               <div class="main-nav__main-brand page-header__brand col-lg-4">
                 <div class="page-header__logo main-logo">
-                  <a class="main-logo__link" href="#" tabindex="1">
+                  <a class="main-logo__link" href="#">
                     <img class="main-logo__img" src="img/gdefit-logo.png" alt="Site Logo" title="Logo description">
                   </a>
                 </div>
@@ -87,7 +87,9 @@
 
               <div class="main-nav__search site-search col-lg-4">
                 <form method="get" class="site-search__form" role="search" action="#">
-                  <input class="site-search__search-field" type="search" name="search" placeholder="Поиск...">
+                  <label class="site-search__label" for="search">
+                    <input class="site-search__search-field" type="search" name="search" id="search" placeholder="Поиск...">
+                  </label>
                   <button class="site-search__btn-submit" type="submit" >
                     <svg class="site-search__icon" width="20" height="20">
                       <use xlink:href="#sprite-icon-search"></use>
