@@ -2,13 +2,13 @@
   background: $post-header-bg-gradient, url("../img/inner-page-title-img-test.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .post-header__container {
   position: relative;
 
-  min-height: 450px;
+  min-height: 360px;
 }
 
 .post-header__title-wrap {
@@ -94,14 +94,12 @@
   margin: 0;
 
   color: $white;
-  text-transform: uppercase;
 }
 
 .post-header__date {
   margin: 0;
 
   color: $white;
-  text-transform: uppercase;
 }
 
 @include tablet-width {

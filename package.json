@@ -26,7 +26,7 @@
     "gulp-svgstore": "^7.0.0",
     "gulp-uglify": "^3.0.1",
     "gulp-webp": "^3.0.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.3.1",
     "path": "^0.12.7",
     "popper.js": "^1.14.4",
     "posthtml-include": "^1.2.0",
@@ -58,7 +58,6 @@
     "node": "8.12"
   },
   "dependencies": {
-    "bower": "^1.8.4",
-    "node-vibrant": "^3.0.0"
+    "bower": "^1.8.4"
   }
 }
